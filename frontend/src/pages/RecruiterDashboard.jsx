@@ -15,7 +15,7 @@ export default function RecruiterDashboard() {
     setJobs(data);
   }
 
-  useEffect(() => { loadJobs(); }, []); // eslint-disable-line
+  useEffect(() => { loadJobs(); }, []);
 
   function update(field, value) { setForm((f) => ({ ...f, [field]: value })); }
 

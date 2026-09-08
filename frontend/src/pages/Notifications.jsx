@@ -8,7 +8,7 @@ export default function Notifications() {
 
   useEffect(() => {
     api.myNotifications(auth.token).then(setItems);
-  }, []); // eslint-disable-line
+  }, []);
 
   return (
     <div className="max-w-xl mx-auto">

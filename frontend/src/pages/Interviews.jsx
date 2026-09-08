@@ -15,7 +15,7 @@ export default function Interviews() {
     setApps(a);
   }
 
-  useEffect(() => { load(); }, []); // eslint-disable-line
+  useEffect(() => { load(); }, []);
 
   function update(field, value) { setForm((f) => ({ ...f, [field]: value })); }
 

@@ -14,7 +14,7 @@ export default function Applications() {
     setApps(data);
   }
 
-  useEffect(() => { load(); }, []); // eslint-disable-line
+  useEffect(() => { load(); }, []);
 
   async function moveStage(id, status) {
     await api.updateApplicationStatus(id, status, auth.token);

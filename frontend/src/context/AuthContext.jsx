@@ -13,7 +13,7 @@ export function AuthProvider({ children }) {
     else sessionStorage.removeItem('careerpilot_auth');
   }, [auth]);
 
-  const login = (data) => setAuth(data); // { token, user }
+  const login = (data) => setAuth(data); 
   const logout = () => setAuth(null);
 
   return (

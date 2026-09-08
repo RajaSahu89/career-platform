@@ -26,7 +26,7 @@ export default function Jobs() {
     }
   }
 
-  useEffect(() => { loadJobs(); }, []); // eslint-disable-line
+  useEffect(() => { loadJobs(); }, []);
 
   async function handleSync() {
     setSyncing(true);
